@@ -1,7 +1,29 @@
 aid: bayomics
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/bayomics.png
 name: bayomics
-description: bayomics is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Bayomics (贝普奥生物) is a Shenzhen-based biotechnology company specializing in spatial
+  proteomics and trace (micro) proteomics solutions for pharmaceutical research and drug
+  development. Its product lines include the SISPROT protein sample-preparation kits built on
+  proprietary Spintip centrifuge-pipette technology that process nanogram-level samples in
+  roughly two hours, VistaProX spatial visualization proteomics combining immunofluorescence
+  staining with high-depth mass-spectrometry detection on a single slice, and high-throughput
+  automation systems capable of processing up to 400 proteomics samples per day. Bayomics
+  operates as a B2B reagent supplier and research-services provider and does not currently
+  publish any public developer API, SDKs, or programmatic developer resources. This profile was
+  surfaced as a portfolio company of Qiming Venture Partners and added to the API Evangelist
+  network for enrichment.
 url: https://raw.githubusercontent.com/api-evangelist/bayomics/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +33,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Biotechnology
+- Proteomics
+- Mass Spectrometry
+- Life Sciences
+- Drug Discovery
+- Laboratory
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +49,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/bayomics-domain-security.yml
 - type: Website
   url: https://bayomics.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
